@@ -10,6 +10,16 @@ isoCode = "en"
 rtl = false
 dateFormat = "2 January 2006"
 
+[[params.author.links]]
+github = "https://github.com/"
+
+[[params.author.links]]
+steam = "https://steamcommunity.com/id/ashofcrow/"
+
+[[params.author.links]]
+x-twitter = "https://x.com/whacknautiloid"
+
 ["params.author"]
 name = "Dennis Karatas"
 image = "logo.png"
+headline = "Is this too much Voodoo for our purposes?"

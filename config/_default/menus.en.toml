@@ -19,5 +19,10 @@ pageRef = "projects"
 identifier = "T0FIK59NiF"
 weight = 9_999
 
+[[main]]
+    name = "Tags"
+    pageRef = "tags"
+    weight = 30
+
 [[footer]]
 none = "none"
