@@ -3,7 +3,7 @@ title: "new-test-article"
 date: 2025-08-04
 draft: false
 description: "a description"
-tags: ["example", "tag"]
+
 ---
  an example to get you started
 # This is a heading
