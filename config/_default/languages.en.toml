@@ -9,9 +9,10 @@ displayName = "EN"
 isoCode = "en"
 rtl = false
 dateFormat = "2 January 2006"
+logo="whale2.png"
 
 [[params.author.links]]
-github = "https://github.com/"
+github = "https://github.com/dekaratas/"
 
 [[params.author.links]]
 steam = "https://steamcommunity.com/id/ashofcrow/"
@@ -23,3 +24,4 @@ x-twitter = "https://x.com/whacknautiloid"
 name = "Dennis Karatas"
 image = "logo.png"
 headline = "Is this too much Voodoo for our purposes?"
+email = "deenzcan@proton.me"
