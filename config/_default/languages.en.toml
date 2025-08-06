@@ -20,8 +20,11 @@ steam = "https://steamcommunity.com/id/ashofcrow/"
 [[params.author.links]]
 x-twitter = "https://x.com/whacknautiloid"
 
+[[params.author.links]]
+spotify = "https://open.spotify.com/user/off-artorias"
+
 ["params.author"]
 name = "Dennis Karatas"
 image = "logo.png"
-headline = "Is this too much Voodoo for our purposes?"
-email = "deenzcan@proton.me"
+headline = "Trapped in this tin can called existence..."
+email = "admin@deenzcan.com"
