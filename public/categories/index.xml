@@ -2,12 +2,44 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on Deenz&#39; Dev Blog</title>
-    <link>http://localhost:1313/categories/</link>
+    <link>https://www.deenzcan.com/categories/</link>
     <description>Recent content in Categories on Deenz&#39; Dev Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
+    <managingEditor>admin@deenzcan.com (Dennis Karatas)</managingEditor>
+    <webMaster>admin@deenzcan.com (Dennis Karatas)</webMaster>
     <copyright>© 2025 Dennis Karatas</copyright>
-    <atom:link href="http://localhost:1313/categories/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 05 Aug 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://www.deenzcan.com/categories/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Personal</title>
+      <link>https://www.deenzcan.com/categories/personal/</link>
+      <pubDate>Tue, 05 Aug 2025 00:00:00 +0000</pubDate>
+      <author>admin@deenzcan.com (Dennis Karatas)</author>
+      <guid>https://www.deenzcan.com/categories/personal/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>The-Site</title>
+      <link>https://www.deenzcan.com/categories/the-site/</link>
+      <pubDate>Tue, 05 Aug 2025 00:00:00 +0000</pubDate>
+      <author>admin@deenzcan.com (Dennis Karatas)</author>
+      <guid>https://www.deenzcan.com/categories/the-site/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Dev</title>
+      <link>https://www.deenzcan.com/categories/dev/</link>
+      <pubDate>Mon, 04 Aug 2025 00:00:00 +0000</pubDate>
+      <author>admin@deenzcan.com (Dennis Karatas)</author>
+      <guid>https://www.deenzcan.com/categories/dev/</guid>
+      <description></description>
+      
+    </item>
     
   </channel>
 </rss>

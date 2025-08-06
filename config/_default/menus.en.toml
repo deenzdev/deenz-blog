@@ -11,13 +11,18 @@ weight = 9_999
 name = "About"
 pageRef = "about"
 identifier = "9bYyV4bgci"
-weight = 9_999
+weight = 10_999
 
 [[main]]
 name = "Projects"
 pageRef = "projects"
 identifier = "T0FIK59NiF"
 weight = 9_999
+
+[[main]]
+name = "Tags"
+pageRef = "tags"
+weight = 10
 
 [[footer]]
 none = "none"
