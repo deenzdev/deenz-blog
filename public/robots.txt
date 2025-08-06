@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: http://www.deenzcan.com/sitemap.xml
+Sitemap: https://www.deenzcan.com/sitemap.xml
