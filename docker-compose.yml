@@ -1,0 +1,125 @@
+volumes:
+  mysql_data:
+  romm_resources:
+  romm_redis_data:
+  grafana_data:
+
+services:
+  blog:
+    container_name: deenz-blog
+    image: XXXXXXX/XXXXXXXimages:latest
+    labels:
+      - com.centurylinklabs.watchtower.scope=
+    ports:
+      - "9000:80"
+    restart: unless-stopped
+
+  watchtower:
+    image: containrrr/watchtower
+    container_name: watchtower
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+    environment:
+      - WATCHTOWER_POLL_INTERVAL=30                            
+      - WATCHTOWER_CLEANUP=true                                 
+      - WATCHTOWER_INCLUDE_RESTARTING=true                      
+      - WATCHTOWER_SCOPE=xxxx                                  
+    restart: unless-stopped
+
+  kavita:
+    image: lscr.io/linuxserver/kavita:latest
+    container_name: kavita
+    ports:
+      - "5000:5000"
+    volumes:
+      - /home/xxxx/Software/Kavita/Kavita/config/:/config
+      - /home/xxxx/Software/Kavita/books/:/home/xxxxx/Documents/books
+    restart: unless-stopped
+
+  romm:
+    image: rommapp/romm:latest
+    container_name: romm
+    restart: unless-stopped
+    environment:
+      - DB_HOST=romm-db
+      - DB_NAME=romm # Should match MARIADB_DATABASE in mariadb
+      - DB_USER=
+      - DB_PASSWD= # Should match MARIADB_PASSWORD in mariadb
+      - IGDB_CLIENT_ID=
+      - IGDB_CLIENT_SECRET=
+      - ROMM_AUTH_SECRET_KEY=
+      - SCREENSCRAPER_USER= # These are the recommended metadata providers
+      - SCREENSCRAPER_PASSWORD= # https://docs.romm.app/latest/Getting-Started/Metadata-Providers/#screenscraper
+      - RETROACHIEVEMENTS_API_KEY=
+      - STEAMGRIDDB_API_KEY=
+      - HASHEOUS_API_ENABLED=true
+    volumes:
+      - romm_resources:/romm/resources # Resources fetched from IGDB (covers, screenshots, etc.)
+      - romm_redis_data:/redis-data # Cached data for background tasks
+      - /home/XXXX/Software/RomM/library:/romm/library # Your game library. Check https://github.com/rommapp/romm?tab=readme-ov-file#folder-structure for more details.
+      - /home/XXXX/Software/RomM/assets:/romm/assets # Uploaded saves, states, etc.
+      - /home/XXXX/Software/RomM/config:/romm/config # Path where config.yml is stored
+    ports:
+      - 80:8080
+    depends_on:
+      romm-db:
+        condition: service_healthy
+        restart: true
+
+  romm-db:
+    image: mariadb:latest
+    container_name: romm-db
+    restart: unless-stopped
+    environment:
+      - MARIADB_DATABASE=romm
+      - MARIADB_USER=
+      - MARIADB_PASSWORD=
+    volumes:
+      - mysql_data:/var/lib/mysql
+    healthcheck:
+      test: ["CMD", "healthcheck.sh", "--connect", "--innodb_initialized"]
+      start_period: 30s
+      start_interval: 10s
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  # Monitoring
+  prometheus:
+    image: prom/prometheus:latest
+    container_name: prometheus
+    volumes:
+      - ./prometheus:/etc/prometheus
+    ports:
+      - "9090:9090"
+    command:
+      - "--config.file=/etc/prometheus/prometheus.yml"
+    restart: unless-stopped
+
+  grafana:
+    image: grafana/grafana:latest
+    container_name: grafana
+    ports:
+      - "3000:3000"
+    volumes:
+      - grafana_data:/var/lib/grafana
+    restart: unless-stopped
+
+  node-exporter:
+    image: prom/node-exporter:latest
+    container_name: node-exporter
+    ports:
+      - "9100:9100"
+    restart: unless-stopped
+
+  cadvisor:
+    image: gcr.io/cadvisor/cadvisor:latest
+    container_name: cadvisor
+    ports:
+      - "8081:8080"
+    volumes:
+      - /:/rootfs:ro
+      - /var/run:/var/run:ro
+      - /sys:/sys:ro
+      - /var/lib/docker/:/var/lib/docker:ro
+    restart: unless-stopped
