@@ -2,23 +2,33 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Dev on Deenz&#39; Dev Blog</title>
-    <link>https://www.deenzcan.com/categories/dev/</link>
+    <link>http://localhost:1313/categories/dev/</link>
     <description>Recent content in Dev on Deenz&#39; Dev Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <managingEditor>admin@deenzcan.com (Dennis Karatas)</managingEditor>
     <webMaster>admin@deenzcan.com (Dennis Karatas)</webMaster>
     <copyright>© 2025 Dennis Karatas</copyright>
-    <lastBuildDate>Mon, 04 Aug 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://www.deenzcan.com/categories/dev/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 06 Aug 2025 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/categories/dev/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>I&#39;m on that Docker in Docker typa shit bruh</title>
+      <link>http://localhost:1313/posts/10586afc4c14-i-m-on-that-docker-in-docker-typa-shit-bruh/</link>
+      <pubDate>Wed, 06 Aug 2025 00:00:00 +0000</pubDate>
+      <author>admin@deenzcan.com (Dennis Karatas)</author>
+      <guid>http://localhost:1313/posts/10586afc4c14-i-m-on-that-docker-in-docker-typa-shit-bruh/</guid>
+      <description>Another unforeseen and self imposed task accomplished to a degree that actually leaves me satisfied.</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/10586afc4c14-i-m-on-that-docker-in-docker-typa-shit-bruh/featured.png" />
+    </item>
     
     <item>
       <title>I&#39;m here....and ya&#39;ll there!</title>
-      <link>https://www.deenzcan.com/posts/a670dacb96c2-i-m-here....and-ya-ll-there/</link>
+      <link>http://localhost:1313/posts/a670dacb96c2-i-m-here....and-ya-ll-there/</link>
       <pubDate>Mon, 04 Aug 2025 00:00:00 +0000</pubDate>
       <author>admin@deenzcan.com (Dennis Karatas)</author>
-      <guid>https://www.deenzcan.com/posts/a670dacb96c2-i-m-here....and-ya-ll-there/</guid>
+      <guid>http://localhost:1313/posts/a670dacb96c2-i-m-here....and-ya-ll-there/</guid>
       <description>Just a short stream of thoughts as to why I am here and why this site exists in the first place.</description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://www.deenzcan.com/posts/a670dacb96c2-i-m-here....and-ya-ll-there/featured.png" />
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/a670dacb96c2-i-m-here....and-ya-ll-there/featured.png" />
     </item>
     
   </channel>

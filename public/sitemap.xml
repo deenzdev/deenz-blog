@@ -3,31 +3,37 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
 
   <url>
-    <loc>https://www.deenzcan.com/about/</loc>
+    <loc>http://localhost:1313/</loc>
+    <lastmod>2025-08-06T00:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>http://localhost:1313/posts/10586afc4c14-i-m-on-that-docker-in-docker-typa-shit-bruh/</loc>
+    <lastmod>2025-08-06T00:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>http://localhost:1313/posts/</loc>
+    <lastmod>2025-08-06T00:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>http://localhost:1313/about/</loc>
     <lastmod>2025-08-05T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://www.deenzcan.com/</loc>
+    <loc>http://localhost:1313/posts/6c0e79fdab42-i-am-tired-boss....-part-1-3/</loc>
     <lastmod>2025-08-05T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://www.deenzcan.com/posts/6c0e79fdab42-i-am-tired-boss....-part-1-3/</loc>
-    <lastmod>2025-08-05T00:00:00+00:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://www.deenzcan.com/posts/</loc>
-    <lastmod>2025-08-05T00:00:00+00:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://www.deenzcan.com/posts/a670dacb96c2-i-m-here....and-ya-ll-there/</loc>
+    <loc>http://localhost:1313/posts/a670dacb96c2-i-m-here....and-ya-ll-there/</loc>
     <lastmod>2025-08-04T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
