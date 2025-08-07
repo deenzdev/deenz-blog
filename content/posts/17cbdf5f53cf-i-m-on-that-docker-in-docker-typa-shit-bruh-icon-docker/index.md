@@ -22,7 +22,9 @@ Regardless, I went and explored the rest of the Google Search Console site out o
 
 Well, turns out that the vast majority of generated files in the public directory, and that incldues the sitemap as well, has the URL of my website described as "http://localhost:1313". Madness. And why haven't I bothered flushing that whole public folder anyways by now. That's easy!
 
-I'm just kinda really fucking stupid sometimes lol. 
+{{< lead >}}
+I'm just kinda really fucking stupid sometimes
+{{< /lead >}}
 
 And so, my designated task for the day would be: Cleaning out the public directory, not break the site and maybe bring a modicum more order into things. And as these things tend to go with me, this small little chore quickly expanded into the idea of: HEY, why don't implement an actual CI/CD pipeline instead of awkwardly juggling the local files in my inventory. And HEY, why don't I move these static files into a Docker container too instead of having them on my godforsaken Desktop...
 
