@@ -6,7 +6,7 @@ COPY . .
 RUN hugo --minify -b https://www.deenzcan.com
 
 # Stage 2: Serve with Nginx
-FROM nginx:alpine:3.21.4
+FROM nginx:alpine
 
 RUN rm -rf /usr/share/nginx/html/*
 COPY --from=builder /site/public /usr/share/nginx/html
