@@ -16,8 +16,6 @@ It seems like I have taken things, once again a smidgen further than I needed to
 
 But anyways, I spent the majority of the evening looking into getting this site indexed through google struggling quite a bit with their claim my `robots.txt` was blocking those poor Googlebots out but I could verifiably check the file myself right then and there and it allowed basically everything and everyone. I dismissed it as a matter of caching, that's essentially become my go-to excuse for any tech-related issues recently. And honestly, do I really that much about being exposed to even more bots and and fake queries muddying my metrics?! Surely not.
 
-![computah](https://i.imgur.com/RRR57yN.jpeg)
-
 Regardless, I went and explored the rest of the Google Search Console site out of curiosity. It seemed fairly empty, a lot of space wasted on what might one day be a plethora of glistening dashboards displaying the tens of dozens of visitors I could have. If I just keep my head in the game, that is. One other "source of interactivity" was the the field to have my ´sitemap.xml´ analyzed. I wasn't quite sure what analyzed meant in that context but I thought it couldn't hurt. I haven't touched it myself or any of the related options so maybe I'll get some good insight into something, at least. 
 
 Well, turns out that the vast majority of generated files in the public directory, and that incldues the sitemap as well, has the URL of my website described as "http://localhost:1313". Madness. And why haven't I bothered flushing that whole public folder anyways by now. That's easy!
