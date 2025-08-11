@@ -1,7 +1,7 @@
 backend:
   name: github
   branch: master # Branch to update (optional; defaults to master)
-  repo: dekaratas/deenz-blog
+  repo: deenzdev/deenz-blog
 media_folder: static/img
 public_folder: /img
 collections:
@@ -9,20 +9,39 @@ collections:
     label: "Articles"
     folder: "content/posts"
     create: true
-    path: '{{slug}}/index'
+    path: "{{slug}}/index"
     slug: "{{timestamp}}-{{slug}}"
-    sortable_fields: ['date', 'title']
+    sortable_fields: ["date", "title"]
     fields:
-      - {label: "Title", name: "title", widget: "string"}
-      - {label: "Publish Date", name: "date", widget: "datetime", format: "YYYY-MM-DD"}
-      - {label: "Draft", name: "draft", widget: "boolean", default: true}
-      - {label: "showHero", name: "showHero",
-         widget: "boolean",
-         default: true}
-      - {label: "Summary", name: "summary", widget: "text", required: false}
-      - {label: "Tags", name: "tags", widget: "list", default: []}
-      - {label: "Categories", name: "categories", widget: "list", default: ["dev"]}
-      - {label: "Featured Image", name: "featured", widget: "image", required: false, path: '{{slug}}/featured'}
+      - { label: "Title", name: "title", widget: "string" }
+      - {
+          label: "Publish Date",
+          name: "date",
+          widget: "datetime",
+          format: "YYYY-MM-DD",
+        }
+      - { label: "Draft", name: "draft", widget: "boolean", default: true }
+      - {
+          label: "showHero",
+          name: "showHero",
+          widget: "boolean",
+          default: true,
+        }
+      - { label: "Summary", name: "summary", widget: "text", required: false }
+      - { label: "Tags", name: "tags", widget: "list", default: [] }
+      - {
+          label: "Categories",
+          name: "categories",
+          widget: "list",
+          default: ["dev"],
+        }
+      - {
+          label: "Featured Image",
+          name: "featured",
+          widget: "image",
+          required: false,
+          path: "{{slug}}/featured",
+        }
       - label: "Body"
         name: "body"
         widget: "markdown"
@@ -34,7 +53,7 @@ collections:
         name: "about"
         file: "content/about.md"
         fields:
-          - {label: "Title", name: "title", widget: "string"}
+          - { label: "Title", name: "title", widget: "string" }
           - label: "Body"
             name: "body"
             widget: "markdown"
