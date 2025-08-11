@@ -6,7 +6,7 @@ showHero: true
 summary: A glimpse into Self-Hosting while I am simultaneously losing it.
 tags:
   - personal
-  - this site
+  - the site
   - docker
   - tutorial
   - cloudflare
@@ -16,7 +16,7 @@ categories:
   - personal
 featured: featured.png
 ---
-So yeah, when I said yesterday that I wanted to take it slow and steady with this site so as to not burn myself out....**I truly meant it**. But one thing led to another. My thoughts started to wander to places best left buried for now. 
+So yeah, when I said yesterday that I wanted to take it slow and steady with this site so as to not burn myself out....**I truly meant it**. But one thing led to another. My thoughts started to wander to places best left buried for now.
 {{< lead >}}
 (Hahaha, I miss her, bros...)
 {{< /lead >}}
@@ -24,7 +24,7 @@ So, I had to distract myself whilst waiting for wagie hour to begin again.
 
 Thus, I've had a little glimpse (strictly for future planning)  into how much domains go for these days. Can't hurt to familiarize myself with these things, two weeks ago I had never even thought about running something as pitiful as a blog ha! Well, turns out...this shit is dirt cheap.
 
-As you can hopefully see, non-existant reader...I had to go for it. There was no other option...and so one thing led to another. I'll try to describe the Odysee that followed to the best of my ability but it's hard to reconstruct the exact steps. I will also note down explanations for a few terms, mostly for myself. That's gonna be a reoccurring thing. 
+As you can hopefully see, non-existant reader...I had to go for it. There was no other option...and so one thing led to another. I'll try to describe the Odysee that followed to the best of my ability but it's hard to reconstruct the exact steps. I will also note down explanations for a few terms, mostly for myself. That's gonna be a reoccurring thing.
 
 Essentially, I had very little idea how long the whole process would take nor did I have any specific plans to actually utilize this domain for the forseeable future but 4,99/year is hard to beat. Well, maybe it's actually easy to beat. It's truly crazy how cheap these things are.
 
@@ -37,7 +37,7 @@ Something about a field talking about how I can substitute the ugly suffix-ed Ne
 
 ![Image of aforementioned UI view](https://i.imgur.com/p2c01dC.png)
 
-Can't hurt to have a quick look, huh. And so I quickly rolled out their documentation. Familiarized with the process and it seemed more daunting in the moment than anything else. I know what a DNS is or at least, what its job is in the grand scheme of things. What I wasn't too familiar with were the various types of DNS records that could exist all belonging to the same IP address. 
+Can't hurt to have a quick look, huh. And so I quickly rolled out their documentation. Familiarized with the process and it seemed more daunting in the moment than anything else. I know what a DNS is or at least, what its job is in the grand scheme of things. What I wasn't too familiar with were the various types of DNS records that could exist all belonging to the same IP address.
 
 ![More Netlify](https://i.imgur.com/VX07mAK.png)
 
@@ -84,7 +84,7 @@ ingress:
 
 **GOOD JOB YOU DID IT**
 
-There's some odd fascination seeing your website be publicly available just like all the other 3 slop sites you cycle through regularly. I am still very much enthralled. 
+There's some odd fascination seeing your website be publicly available just like all the other 3 slop sites you cycle through regularly. I am still very much enthralled.
 
 Now there are obviously security concerns you have to take into considerations. Cloudflare has an honestly impressive plethora of free options and configurations available with which you can play.
 
