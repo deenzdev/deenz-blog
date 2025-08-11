@@ -4,12 +4,12 @@ env:
   IMAGE_NAME: deenzdev/deenz-blog-images
   BASE_URL: https://www.deenzcan.com
 
-# on:
-#  push:
-#    branches:
-#      - master
+ on:
+  push:
+    branches:
+      - master
 
-on: [push]
+# on: [push]
 
 jobs:
   build-hugo-blog:
@@ -37,7 +37,7 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
-        
+
       - name: Extract short SHA for tag
         id: vars
         run: echo "SHORT_SHA=$(git rev-parse --short HEAD)" >> $GITHUB_OUTPUT

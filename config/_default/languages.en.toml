@@ -9,10 +9,10 @@ displayName = "EN"
 isoCode = "en"
 rtl = false
 dateFormat = "2 January 2006"
-logo="whale2.png"
+logo = "whale2.png"
 
 [[params.author.links]]
-github = "https://github.com/dekaratas/"
+github = "https://github.com/deenzdev/"
 
 [[params.author.links]]
 steam = "https://steamcommunity.com/id/ashofcrow/"
@@ -24,7 +24,7 @@ x-twitter = "https://x.com/whacknautiloid"
 spotify = "https://open.spotify.com/user/off-artorias"
 
 ["params.author"]
-name = "Dennis Karatas"
+name = "Deenz"
 image = "logo.png"
 headline = "Trapped in this tin can called existence..."
 email = "admin@deenzcan.com"

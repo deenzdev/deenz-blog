@@ -55,7 +55,7 @@ In GitHub's defense, I always really liked their UI and it gives me more of a fe
 
 Nevertheless, I got to work. The nice thing when working on personal projects is the opportunity to only focus on functionality. I mean, you can't really mess up that much structurally in a YAML file anyways but I don't find myself checking trailing whitespace over and over again. I know my IDE should do that by itself but I haven't gotten around to click that checkbox yet bro chill...Feel free to check my crap (BUT FUNCTIONAL) code yourself, it should be inside `.github/workflows/github-workflow.yml`.
 
-{{< github repo="dekaratas/deenz-blog" showThumbnail=true >}}
+{{< github repo="deenzdev/deenz-blog" showThumbnail=true >}}
 
 The only notable section is how GitHub seemingly handles environments and environment variables/secrets. There seem to be very clear distinctions between them all and different contexts...and I am not quite sure how I actually got the docker login command to recognize both values finally after a good half hour but I am not complaining. AND DON'T TELL ME TO READ THE DOCS. I read the docs. They're very short worded when it comes to this particular topic. Very few good examples. But oh well, I figured it out. :^)
 Ohh, and deciphering what damn Docker registry I have to log into was also a lot of guess work. I hope to have a more surefire way to determine that in the future. (I am likely just being stupid...) but I will definitely update this part when I hear something, even just for my own sake.
