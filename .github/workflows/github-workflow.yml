@@ -4,7 +4,7 @@ env:
   IMAGE_NAME: deenzdev/deenz-blog-images
   BASE_URL: https://www.deenzcan.com
 
- on:
+on:
   push:
     branches:
       - master
@@ -22,7 +22,7 @@ jobs:
       - name: Install Hugo
         uses: peaceiris/actions-hugo@v3
         with:
-          hugo-version: 'latest'
+          hugo-version: "latest"
 
       - name: Clean and Build Hugo Site
         run: |
