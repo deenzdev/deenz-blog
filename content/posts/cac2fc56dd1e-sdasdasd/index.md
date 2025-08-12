@@ -9,7 +9,7 @@ tags:
   - the site
 categories:
   - dev
-featured: featured.jpeg
+featured: 1754345879732170.jpg
 ---
 {{< lead >}}
 "Wait, maybe. I think maybe I'm just like a little bizarre little person who walks back and forth. Whatever, you know..."
@@ -61,6 +61,6 @@ But I will have to do a bit of research before because I am not entirely sure wh
 As for more immediate plans? If nothing horrible happens, I’ll delve into methods to probe my site and services for basic security misconfigurations tonight. I’ll try to document everything and maybe I’ll get out 2 posts in a single day…wouldn’t that be crazy?
 
 {{< typeit >}}
-Anyways, K***! You will not be reading this but I am still thinking of you.
+Anyways, K\*\*\*! You will not be reading this but I am still thinking of you.
 Forever will. Anyways....Cya! :^)
 {{< /typeit >}}
