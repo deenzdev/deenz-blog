@@ -16,7 +16,7 @@ COPY --from=builder /site/public /usr/share/nginx/html
 
 # Stage 5: Change permissions so non-root user can read
 RUN chown -R nginx:nginx /usr/share/nginx/html
-USER nginx
+# TODO: Run as non-root user
 
 EXPOSE 80
 CMD ["nginx", "-g", "daemon off;"]
