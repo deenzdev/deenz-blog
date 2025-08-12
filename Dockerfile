@@ -15,7 +15,7 @@ RUN rm -rf /usr/share/nginx/html/*
 COPY --from=builder /site/public /usr/share/nginx/html
 
 # Stage 5: Change permissions so non-root user can read
-RUN chown -R nginx:Nginx /usr/share/nginx/html
+RUN chown -R nginx:nginx /usr/share/nginx/html
 USER nginx
 
 EXPOSE 80
