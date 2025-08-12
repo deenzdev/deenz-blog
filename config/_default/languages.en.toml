@@ -9,7 +9,8 @@ displayName = "EN"
 isoCode = "en"
 rtl = false
 dateFormat = "2 January 2006"
-logo = "whale2.png"
+logo = "whale_2.png"
+description = "A blog about programming, my personal woes, and whatever else is on my mind.."
 
 [[params.author.links]]
 github = "https://github.com/deenzdev/"
@@ -26,5 +27,7 @@ spotify = "https://open.spotify.com/user/off-artorias"
 ["params.author"]
 name = "Deenz"
 image = "logo.png"
-headline = "Trapped in this tin can called existence..."
+headline = "How the fuck did you get here???"
 email = "admin@deenzcan.com"
+imageQuality = "96"
+bio = "Just some 28 year old doomer writing about random crud."
