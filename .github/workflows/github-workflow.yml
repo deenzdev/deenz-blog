@@ -56,6 +56,6 @@ jobs:
         with:
           context: .
           push: true
-          tags: $IMAGE_NAME:latest, $IMAGE_NAME:${{ steps.vars.outputs.SHORT_SHA }}
+          tags: ${{ env.IMAGE_NAME }}:latest,${{ env.IMAGE_NAME }}:${{ steps.vars.outputs.SHORT_SHA }}
           provenance: true
           sbom: true
