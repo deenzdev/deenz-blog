@@ -11,7 +11,8 @@ FROM nginx:alpine
 # Stage 3: Remove default content
 RUN rm -rf /usr/share/nginx/html/*
 
-# Stage 4: Copy files from builder stage
+# Stage 4: Copy files from builder stage and nginx.conf
+COPY nginx.conf /etc/nginx/conf.d/default.conf
 COPY --from=builder /site/public /usr/share/nginx/html
 
 # Stage 5: Change permissions so non-root user can read
